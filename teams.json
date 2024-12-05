@@ -3,6 +3,13 @@
   {"name": "New Orleans Pelicans", "players": "Dejounte Murray, CJ McCollum, Brandon Ingram, Zion Williamson, Yves Missi"},
   {"name": "Utah Jazz", "players": "Keyonte George, Collin Sexton, Lauri Markkanen, John Collins, Walker Kessler"},
   {"name": "Charlotte Hornets", "players": "LaMelo Ball, Brandon Miller, Josh Green, Miles Bridges, Mark Williams"},
-  {"name": "Toronto Raptors", "players":}
-
+  {"name": "Toronto Raptors", "players": "Scottie Barnes, Gradey Dick, RJ Barrett, Ochai Agbaji, Jakob Poeltl"},
+  {"name": "Portland Trail Blazers", "players": "Anfernee Simons, Shaedon Sharpe, Toumani Camara, Jerami Grant, Deandre Ayton"},
+  {"name": "Detroit Pistons", "players": "Cade Cunningham, Jaden Ivey, Tim Hardaway Jr. Tobias Harris, Jalen Duren"},
+  {"name": "Indiana Pacers", "players": "Tyrese Haliburton, Andrew Nembhard, Bennedict Mathurin, Pascal Siakam, Myles Turner"},
+  {"name": "Chicago Bulls", "players": "Josh Giddey, Coby White, Zach LaVine, Patrick Williams, Nikola Vucevic"},
+  {"name": "Brooklyn Nets", "players": "Dennis Schroder, Cam Thomas, Ben Simmons, Dorian Finney-Smith, Nic Claxton"},
+  {"name": "Sacramento Kings", "players": "De'Aaron Fox, Malik Monk, DeMar DeRozan, Keegan Murray, Domantas Sabonis"},
+  {}
 ]
+
