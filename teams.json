@@ -10,6 +10,22 @@
   {"name": "Chicago Bulls", "players": "Josh Giddey, Coby White, Zach LaVine, Patrick Williams, Nikola Vucevic"},
   {"name": "Brooklyn Nets", "players": "Dennis Schroder, Cam Thomas, Ben Simmons, Dorian Finney-Smith, Nic Claxton"},
   {"name": "Sacramento Kings", "players": "De'Aaron Fox, Malik Monk, DeMar DeRozan, Keegan Murray, Domantas Sabonis"},
-  {}
+  {"name": "Miami Heat", "players": "Tyler Herro, Duncan Robinson, Jimmy Butler, Haywood Highsmith, Bam Adebayo"},
+  {"name": "San Antonio Spurs", "players": "Chris Paul, Stephon Castle, Harrison Barnes, Jeremy Sochan, Victor Wembanyama"},
+  {"name": "Atlanta Hawks", "players": "Trae Young, Dyson Daniels, Zaccharie Risacher, Jalen Johnson, Clint Capela"},
+  {"name": "Minnesota Timberwolves", "players": "Mike Conley, Anthony Edwards, Jaden McDaniels, Julius Randle, Rudy Gobert"},
+  {"name": "Milwaukee Bucks", "players": "Damian Lillard, Khris Middleton, Taurean Prince, Giannis Antetokounmpo, Brook Lopez"},
+  {"name": "Los Angeles Lakers", "players": "Austin Reaves, Dalton Knecht, Rui Hachimura, LeBron James, Anthony Davis"},
+  {"name": "Denver Nuggets", "players": "Jamal Murray, Christian Braun, Michael Porter Jr., Aaron Gordon, Nikola Jokic"},
+  {"name": "Phoenix Suns", "players": "Tyus Jones, Devin Booker, Bradley Beal, Kevin Durant, Jusuf Nurkic"},
+  {"name": "Los Angeles Clippers", "players": "James Harden, Kris Dunn, Norman Powell, Derrick Jones Jr., Ivica Zubac"},
+  {"name": "Golden State Warriors", "players": "Stephen Curry, Brandin Podziemski, Andrew Wiggins, Draymond Green, Trayce Jackson-Davis"},
+  {"name": "New York Knicks", "players": "Jalen Brunson, Mikal Bridges, Josh Hart, OG Anunoby, Karl-Anthony Towns"},
+  {"name": "Memphis Grizzlies", "players": "Ja Morant, Desmond Bane, Jaylen Wells, Jaren Jackson Jr., Brandon Clarke"},
+  {"name": "Dallas Mavericks", "players": "Luka Doncic, Kyrie Irving, Klay Thompson, PJ Washington, Dereck Lively II"},
+  {"name": "Houston Rockets", "players": "Fred VanVleet, Jalen Green, Dillon Brooks, Jabari Smith Jr., Alperen Sengun"},
+  {"name": "Orlando Magic", "players": "Jalen Suggs, Kentavious Caldwell-Pope, Franz Wagner, Paolo Banchero, Goga Bitadze"},
+  {"name": "Oklahoma City Thunder", "players": "Shai Gilgeous-Alexander, Cason Wallace, Luguentz Dort, Jalen Williams, Chet Holmgren"},
+  
 ]
 
