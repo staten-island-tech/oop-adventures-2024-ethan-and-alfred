@@ -26,6 +26,6 @@
   {"name": "Houston Rockets", "players": "Fred VanVleet, Jalen Green, Dillon Brooks, Jabari Smith Jr., Alperen Sengun"},
   {"name": "Orlando Magic", "players": "Jalen Suggs, Kentavious Caldwell-Pope, Franz Wagner, Paolo Banchero, Goga Bitadze"},
   {"name": "Oklahoma City Thunder", "players": "Shai Gilgeous-Alexander, Cason Wallace, Luguentz Dort, Jalen Williams, Chet Holmgren"},
-  
-]
+  {"name": "Boston Celtics", "players": "Jrue Holiday, Derrick White, Jaylen Brown, Jayson Tatum, Kristaps Porzingis"},
+  {"name": "Cleveland Cavaliers", "players": "Darius Garland, Donovan Mitchell, Isaac Okoro, Evan Mobley, Jarrett Allen"} ]
 
