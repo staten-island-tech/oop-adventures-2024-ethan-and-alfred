@@ -1,0 +1,45 @@
+[   {"name": "Luka Doncic",
+"stats": {
+    "height": "79 inches",
+    "athleticism": "86",
+    "shooting": "   98",
+    "defense": "82",
+    "playmaking": "96",
+    "rebounding": "87"
+}},
+{"name": "Kyrie Irving",
+"stats": {
+    "height": "74 inches",
+    "athleticism": "96",
+    "shooting": "98",
+    "defense": "97",
+    "playmaking": "98",
+    "rebounding": "85"
+}},
+{"name": "Klay Thompson",
+"stats": {
+    "height": "78 inches",
+    "athleticism": "90",
+    "shooting": "96",
+    "defense": "90",
+    "playmaking": "79",
+    "rebounding": "58"
+}},
+{"name": "PJ Washington",
+"stats": {
+    "height": "79 inches",
+    "athleticism": "85",
+    "shooting": "90",
+    "defense": "80",
+    "playmaking": "76",
+    "rebounding": "81"
+}},
+{"name": "Dereck Lively II",
+"stats": {
+    "height": "85 inches",
+    "athleticism": "82",
+    "shooting": "71",
+    "defense": "82",
+    "playmaking": "62",
+    "rebounding": "86"
+}}  ]

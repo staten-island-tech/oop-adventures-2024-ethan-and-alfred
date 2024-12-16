@@ -1,24 +1,24 @@
-[   {"name": "Jalen Brunson",
+[   {"name": "Jalen Suggs",
 "stats": {
-    "height": "74 inches",
-    "athleticism": "93",
-    "shooting": "97",
-    "defense": "86",
-    "playmaking": "96",
-    "rebounding": "60"
-}},
-{"name": "Mikal Bridges",
-"stats": {
-    "height": "78 inches",
-    "athleticism": "94",
-    "shooting": "96",
+    "height": "77 inches",
+    "athleticism": "91",
+    "shooting": "86",
     "defense": "92",
-    "playmaking": "92",
-    "rebounding": "88"
+    "playmaking": "87",
+    "rebounding": "69"
 }},
-{"name": "Josh Hart",
+{"name": "Kentavious Caldwell-Pope",
 "stats": {
-    "height": "76 inches",
+    "height": "77 inches",
+    "athleticism": "91",
+    "shooting": "93",
+    "defense": "93",
+    "playmaking": "77",
+    "rebounding": "46"
+}},
+{"name": "Franz Wagner",
+"stats": {
+    "height": " inches",
     "athleticism": "97",
     "shooting": "89",
     "defense": "93",
