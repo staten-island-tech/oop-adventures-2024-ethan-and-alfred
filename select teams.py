@@ -1,36 +1,13 @@
-import os
-import json
+teams = {Brooklyn_Nets = ["Dennis Schroder", "Cam Thomas", "Ben Simmons", "Dorian Finney-Smith", "Nic Claxton"],
+Dallas_Mavericks = ["Luka Doncic", "Kyrie Irving", "Klay Thompson", "PJ Washington", "Dereck Lively II"],
+Golden_State_Warriors = ["Stephen Curry", "Brandin Podziemski", "Andrew Wiggins", "Draymond Green", "Trayce Jackson-Davis"],
+Los_Angeles_Lakers = ["Austin Reaves", "Dalton Knecht", "Rui Hachimura", "LeBron James", "Anthony Davis"],
+New_York_Knicks = ["Jalen Brunson", "Mikal Bridges", "Josh Hart", "OG Anunoby", "Karl Anthony-Towns"],
+Orlando_Magic = ["Jalen Suggs", "Kentavious Caldwell-Pope", "Franz Wagner", "Paolo Banchero", "Goga Bitadze"]}
 
-with open("./teams.json", encoding="utf8") as file:
-    teams_data = json.load(file)
 
-search_name = input("What team do you want to be? Choose the Nets, Lakers, Mavericks, Magic, Knicks or Warriors:").strip().lower()
-
-found_teams = []
-
-for team in teams_data:
-    team_name = team.get('name', '').lower()  
-    if team_name == search_name:
-        found_teams.append(team)
-
-if found_teams:
-    print(f"Found the following team:")
-    for team in found_teams:
-        print("This is your current team.")
+team = input(f"Choose a team from {', '.join(teams_players.keys())}: ")
+if team in teams_players:
+    print(f"{team} players: {', '.join(teams_players[team])}")
 else:
-    print("No team found. Choose the Nets, Lakers, Mavericks, Magic, Knicks or Warriors")
-
-search_players = input("Name a player from your team.")
-found_players = []
-
-for players in teams_data:
-    players_name = players.get('name', '').lower()  
-    if players_name == search_players:
-        found_players.append(players)
-if found_players:
-    print(f"Found your player:")
-    for player in found_players:
-        print(['players'])
-else:
-    print("No player found. Select another player from your team.")
-
+    print("Invalid team!")

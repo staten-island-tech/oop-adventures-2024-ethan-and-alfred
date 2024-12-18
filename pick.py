@@ -1,6 +1,6 @@
 import os
 import json
-teams = json.load()
+teams = json.load(json)
 search_name = input("Enter the name of Player to search for: ").strip().lower()
 found_player = []
 for player in teams:

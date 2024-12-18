@@ -250,21 +250,21 @@
     "playmaking": "84",
     "rebounding": "98"
 }},
-{"name": "Paolo Banchero",
-"stats": {
-    "height": "82 inches",
-    "athleticism": "84",
-    "shooting": "89",
-    "defense": "89",
-    "playmaking": "84",
-    "rebounding": "86"
-}},
-{"name": "Goga Bitadze",
-"stats": {
-    "height": "83 inches",
-    "athleticism": "73",
-    "shooting": "51",
-    "defense": "83",
-    "playmaking": "72",
-    "rebounding": "87"
-}}  ]
+    {"name": "Paolo Banchero",
+    "stats": {
+        "height": "82 inches",
+        "athleticism": "84",
+        "shooting": "89",
+        "defense": "89",
+        "playmaking": "84",
+        "rebounding": "86"
+    }},
+    {"name": "Goga Bitadze",
+    "stats": {
+        "height": "83 inches",
+        "athleticism": "73",
+        "shooting": "51",
+        "defense": "83",
+        "playmaking": "72",
+        "rebounding": "87"
+    }}  ]
