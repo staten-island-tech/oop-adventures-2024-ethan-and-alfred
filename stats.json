@@ -1,0 +1,270 @@
+[{"name": "Dennis Schroder",
+"stats": {
+    "height": "73 inches",
+    "athleticism": "91",
+    "shooting": "90",
+    "defense": "75",
+    "playmaking": "87",
+    "rebounding": "53"
+}},
+{"name": "Cam Thomas",
+"stats": {
+    "height": "75 inches",
+    "athleticism": "85",
+    "shooting": "92",
+    "defense": "73",
+    "playmaking": "83",
+    "rebounding": "52"
+}},
+{"name": "Ben Simmons",
+"stats": {
+    "height": "82 inches",
+    "athleticism": "89",
+    "shooting": "58",
+    "defense": "79",
+    "playmaking": "73",
+    "rebounding": "78"
+}},
+{"name": "Dorian Finney-Smith",
+"stats": {
+    "height": "80 inches",
+    "athleticism": "85",
+    "shooting": "76",
+    "defense": "81",
+    "playmaking": "67",
+    "rebounding": "75"
+}},
+{"name": "Nic Claxton",
+"stats": {
+    "height": "83 inches",
+    "athleticism": "88",
+    "shooting": "58",
+    "defense": "94",
+    "playmaking": "51",
+    "rebounding": "90"
+}},
+   {"name": "Luka Doncic",
+"stats": {
+    "height": "79 inches",
+    "athleticism": "86",
+    "shooting": "   98",
+    "defense": "82",
+    "playmaking": "96",
+    "rebounding": "87"
+}},
+{"name": "Kyrie Irving",
+"stats": {
+    "height": "74 inches",
+    "athleticism": "96",
+    "shooting": "98",
+    "defense": "97",
+    "playmaking": "98",
+    "rebounding": "85"
+}},
+{"name": "Klay Thompson",
+"stats": {
+    "height": "78 inches",
+    "athleticism": "90",
+    "shooting": "96",
+    "defense": "90",
+    "playmaking": "79",
+    "rebounding": "58"
+}},
+{"name": "PJ Washington",
+"stats": {
+    "height": "79 inches",
+    "athleticism": "85",
+    "shooting": "90",
+    "defense": "80",
+    "playmaking": "76",
+    "rebounding": "81"
+}},
+{"name": "Dereck Lively II",
+"stats": {
+    "height": "85 inches",
+    "athleticism": "82",
+    "shooting": "71",
+    "defense": "82",
+    "playmaking": "62",
+    "rebounding": "86"
+}},
+{"name": "Stephen Curry",
+"stats": {
+    "height": "75 inches",
+    "athleticism": "91",
+    "shooting": "99",
+    "defense": "82",
+    "playmaking": "97",
+    "rebounding": "68"
+}},
+{"name": "Brandin Podziemski",
+"stats": {
+    "height": "76 inches",
+    "athleticism": "82",
+    "shooting": "82",
+    "defense": "76",
+    "playmaking": "83",
+    "rebounding": "73"
+}},
+{"name": "Andrew Wiggins",
+"stats": {
+    "height": "80 inches",
+    "athleticism": "93",
+    "shooting": "87",
+    "defense": "89",
+    "playmaking": "79",
+    "rebounding": "69"
+}},
+{"name": "Draymond Green",
+"stats": {
+    "height": "78 inches",
+    "athleticism": "90",
+    "shooting": "84",
+    "defense": "94",
+    "playmaking": "90",
+    "rebounding": "91"
+}},
+{"name": "Trayce Jackson-Davis",
+"stats": {
+    "height": "81 inches",
+    "athleticism": "82",
+    "shooting": "67",
+    "defense": "68",
+    "playmaking": "64",
+    "rebounding": "80"
+}},
+  {"name": "Austin Reaves",
+"stats": {
+    "height": "77 inches",
+    "athleticism": "74",
+    "shooting": "82",
+    "defense": "56",
+    "playmaking": "65",
+    "rebounding": "46"
+}},
+{"name": "Dalton Knecht",
+"stats": {
+    "height": "78 inches",
+    "athleticism": "85",
+    "shooting": "96",
+    "defense": "72",
+    "playmaking": "78",
+    "rebounding": "45"
+}},
+{"name": "Rui Hachimura",
+"stats": {
+    "height": "80 inches",
+    "athleticism": "93",
+    "shooting": "90",
+    "defense": "89",
+    "playmaking": "72",
+    "rebounding": "89"
+}},
+{"name": "LeBron James",
+"stats": {
+    "height": "81 inches",
+    "athleticism": "99",
+    "shooting": "97",
+    "defense": "95",
+    "playmaking": "95",
+    "rebounding": "88"
+}},
+{"name": "Anthony Davis",
+"stats": {
+    "height": "82 inches",
+    "athleticism": "93",
+    "shooting": "89",
+    "defense": "94",
+    "playmaking": "81",
+    "rebounding": "94"
+}},
+ {"name": "Jalen Brunson",
+"stats": {
+    "height": "74 inches",
+    "athleticism": "93",
+    "shooting": "97",
+    "defense": "86",
+    "playmaking": "96",
+    "rebounding": "60"
+}},
+{"name": "Mikal Bridges",
+"stats": {
+    "height": "78 inches",
+    "athleticism": "94",
+    "shooting": "96",
+    "defense": "92",
+    "playmaking": "92",
+    "rebounding": "88"
+}},
+{"name": "Josh Hart",
+"stats": {
+    "height": "76 inches",
+    "athleticism": "97",
+    "shooting": "89",
+    "defense": "93",
+    "playmaking": "84",
+    "rebounding": "98"
+}},
+{"name": "OG Anunoby",
+"stats": {
+    "height": "79 inches",
+    "athleticism": "84",
+    "shooting": "87",
+    "defense": "89",
+    "playmaking": "84",
+    "rebounding": "77"
+}},
+{"name": "Karl Anthony-Towns",
+"stats": {
+    "height": "83 inches",
+    "athleticism": "96",
+    "shooting": "95",
+    "defense": "94",
+    "playmaking": "86",
+    "rebounding": "98"
+}},
+   {"name": "Jalen Suggs",
+"stats": {
+    "height": "77 inches",
+    "athleticism": "91",
+    "shooting": "86",
+    "defense": "92",
+    "playmaking": "87",
+    "rebounding": "69"
+}},
+{"name": "Kentavious Caldwell-Pope",
+"stats": {
+    "height": "77 inches",
+    "athleticism": "91",
+    "shooting": "93",
+    "defense": "93",
+    "playmaking": "77",
+    "rebounding": "46"
+}},
+{"name": "Franz Wagner",
+"stats": {
+    "height": "82 inches",
+    "athleticism": "97",
+    "shooting": "89",
+    "defense": "93",
+    "playmaking": "84",
+    "rebounding": "98"
+}},
+{"name": "Paolo Banchero",
+"stats": {
+    "height": "82 inches",
+    "athleticism": "84",
+    "shooting": "89",
+    "defense": "89",
+    "playmaking": "84",
+    "rebounding": "86"
+}},
+{"name": "Goga Bitadze",
+"stats": {
+    "height": "83 inches",
+    "athleticism": "73",
+    "shooting": "51",
+    "defense": "83",
+    "playmaking": "72",
+    "rebounding": "87"
+}}  ]

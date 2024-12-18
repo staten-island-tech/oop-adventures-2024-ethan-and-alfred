@@ -1,7 +1,6 @@
 import os
 import json
-with open("./los angeles lakers.json", encoding="utf8") as teams_file:
-    teams = json.load(teams_file)
+teams = json.load()
 search_name = input("Enter the name of Player to search for: ").strip().lower()
 found_player = []
 for player in teams:
