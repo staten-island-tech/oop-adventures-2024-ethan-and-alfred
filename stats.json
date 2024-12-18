@@ -1,11 +1,12 @@
-[   {"name": "Dennis Schroder",
+[{"name": "Dennis Schroder",
 "stats": {
     "height": "73 inches",
     "athleticism": "91",
     "shooting": "90",
     "defense": "75",
     "playmaking": "87",
-    "rebounding": "53"
+    "rebounding": "53",
+    "team": "Golden State Warriors"
 }},
 {"name": "Cam Thomas",
 "stats": {
@@ -14,7 +15,8 @@
     "shooting": "92",
     "defense": "73",
     "playmaking": "83",
-    "rebounding": "52"
+    "rebounding": "52",
+    "team":"Brooklyn Nets"
 }},
 {"name": "Ben Simmons",
 "stats": {
@@ -23,7 +25,8 @@
     "shooting": "58",
     "defense": "79",
     "playmaking": "73",
-    "rebounding": "78"
+    "rebounding": "78",
+    "team":"Brooklyn Nets"
 }},
 {"name": "Dorian Finney-Smith",
 "stats": {
@@ -32,7 +35,8 @@
     "shooting": "76",
     "defense": "81",
     "playmaking": "67",
-    "rebounding": "75"
+    "rebounding": "75",
+    "team":"Brooklyn Nets"
 }},
 {"name": "Nic Claxton",
 "stats": {
@@ -41,7 +45,8 @@
     "shooting": "58",
     "defense": "94",
     "playmaking": "51",
-    "rebounding": "90"
+    "rebounding": "90",
+    "team":"Brooklyn Nets"
 }}, 
    {"name": "Luka Doncic",
 "stats": {
@@ -50,7 +55,8 @@
     "shooting": "   98",
     "defense": "82",
     "playmaking": "96",
-    "rebounding": "87"
+    "rebounding": "87",
+    "team":"Dallas Mavericks"
 }},
 {"name": "Kyrie Irving",
 "stats": {
@@ -59,7 +65,8 @@
     "shooting": "98",
     "defense": "97",
     "playmaking": "98",
-    "rebounding": "85"
+    "rebounding": "85",
+    "team":"Dallas Mavericks"
 }},
 {"name": "Klay Thompson",
 "stats": {
@@ -68,7 +75,8 @@
     "shooting": "96",
     "defense": "90",
     "playmaking": "79",
-    "rebounding": "58"
+    "rebounding": "58",
+    "team":"Dallas Mavericks"
 }},
 {"name": "PJ Washington",
 "stats": {
@@ -77,7 +85,8 @@
     "shooting": "90",
     "defense": "80",
     "playmaking": "76",
-    "rebounding": "81"
+    "rebounding": "81",
+    "team":"Dallas Mavericks"
 }},
 {"name": "Dereck Lively II",
 "stats": {
@@ -86,7 +95,8 @@
     "shooting": "71",
     "defense": "82",
     "playmaking": "62",
-    "rebounding": "86"
+    "rebounding": "86",
+    "team":"Dallas Mavericks"
 }},
 {"name": "Stephen Curry",
 "stats": {
@@ -95,7 +105,8 @@
     "shooting": "99",
     "defense": "82",
     "playmaking": "97",
-    "rebounding": "68"
+    "rebounding": "68",
+    "team":"Golden State Warriors"
 }},
 {"name": "Brandin Podziemski",
 "stats": {
@@ -104,7 +115,8 @@
     "shooting": "82",
     "defense": "76",
     "playmaking": "83",
-    "rebounding": "73"
+    "rebounding": "73",
+    "team":"Golden State Warriors"
 }},
 {"name": "Andrew Wiggins",
 "stats": {
@@ -113,7 +125,8 @@
     "shooting": "87",
     "defense": "89",
     "playmaking": "79",
-    "rebounding": "69"
+    "rebounding": "69",
+    "team":"Golden State Warriors"
 }},
 {"name": "Draymond Green",
 "stats": {
@@ -122,7 +135,8 @@
     "shooting": "84",
     "defense": "94",
     "playmaking": "90",
-    "rebounding": "91"
+    "rebounding": "91",
+    "team":"Golden State Warriors"
 }},
 {"name": "Trayce Jackson-Davis",
 "stats": {
@@ -131,7 +145,8 @@
     "shooting": "67",
     "defense": "68",
     "playmaking": "64",
-    "rebounding": "80"
+    "rebounding": "80",
+    "team":"Golden State Warriors"
 }},
   {"name": "Austin Reaves",
 "stats": {
@@ -140,7 +155,8 @@
     "shooting": "82",
     "defense": "56",
     "playmaking": "65",
-    "rebounding": "46"
+    "rebounding": "46",
+    "team":"Los Angeles Lakers"
 }},
 {"name": "Dalton Knecht",
 "stats": {
@@ -149,7 +165,8 @@
     "shooting": "96",
     "defense": "72",
     "playmaking": "78",
-    "rebounding": "45"
+    "rebounding": "45",
+    "team": "Los Angeles Lakers"
 }},
 {"name": "Rui Hachimura",
 "stats": {
@@ -158,7 +175,8 @@
     "shooting": "90",
     "defense": "89",
     "playmaking": "72",
-    "rebounding": "89"
+    "rebounding": "89",
+    "team":"Los Angeles Lakers"
 }},
 {"name": "LeBron James",
 "stats": {
@@ -167,7 +185,8 @@
     "shooting": "97",
     "defense": "95",
     "playmaking": "95",
-    "rebounding": "88"
+    "rebounding": "88",
+    "team":"Los Angeles Lakers"
 }},
 {"name": "Anthony Davis",
 "stats": {
@@ -176,7 +195,8 @@
     "shooting": "89",
     "defense": "94",
     "playmaking": "81",
-    "rebounding": "94"
+    "rebounding": "94",
+    "team":"Los Angeles Lakers"
 }},
  {"name": "Jalen Brunson",
 "stats": {
@@ -185,7 +205,8 @@
     "shooting": "97",
     "defense": "86",
     "playmaking": "96",
-    "rebounding": "60"
+    "rebounding": "60",
+    "team":"New York Knicks"
 }},
 {"name": "Mikal Bridges",
 "stats": {
@@ -194,7 +215,8 @@
     "shooting": "96",
     "defense": "92",
     "playmaking": "92",
-    "rebounding": "88"
+    "rebounding": "88",
+    "team":"New York Knicks"
 }},
 {"name": "Josh Hart",
 "stats": {
@@ -203,7 +225,8 @@
     "shooting": "89",
     "defense": "93",
     "playmaking": "84",
-    "rebounding": "98"
+    "rebounding": "98",
+    "team":"New York Knicks"
 }},
 {"name": "OG Anunoby",
 "stats": {
@@ -212,7 +235,8 @@
     "shooting": "87",
     "defense": "89",
     "playmaking": "84",
-    "rebounding": "77"
+    "rebounding": "77",
+    "team":"New York Knicks"
 }},
 {"name": "Karl Anthony-Towns",
 "stats": {
@@ -221,7 +245,8 @@
     "shooting": "95",
     "defense": "94",
     "playmaking": "86",
-    "rebounding": "98"
+    "rebounding": "98",
+    "team":"New York Knicks"
 }},
    {"name": "Jalen Suggs",
 "stats": {
