@@ -1,0 +1,45 @@
+[   {"name": "Jalen Suggs",
+"stats": {
+    "height": "77 inches",
+    "athleticism": "91",
+    "shooting": "86",
+    "defense": "92",
+    "playmaking": "87",
+    "rebounding": "69"
+}},
+{"name": "Kentavious Caldwell-Pope",
+"stats": {
+    "height": "77 inches",
+    "athleticism": "91",
+    "shooting": "93",
+    "defense": "93",
+    "playmaking": "77",
+    "rebounding": "46"
+}},
+{"name": "Franz Wagner",
+"stats": {
+    "height": "82 inches",
+    "athleticism": "84",
+    "shooting": "90",
+    "defense": "81",
+    "playmaking": "86",
+    "rebounding": "80"
+}},
+{"name": "Paolo Banchero",
+"stats": {
+    "height": "82 inches",
+    "athleticism": "91",
+    "shooting": "88",
+    "defense": "89",
+    "playmaking": "85",
+    "rebounding": "94"
+}},
+{"name": "Goga Bitadze",
+"stats": {
+    "height": "83 inches",
+    "athleticism": "72",
+    "shooting": "64",
+    "defense": "82",
+    "playmaking": "52",
+    "rebounding": "83"
+}}  ]
