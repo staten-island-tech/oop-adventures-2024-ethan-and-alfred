@@ -1,5 +1,3 @@
-import json
-
 teams = {
     "Nets": ["Dennis Schroder", "Cam Thomas", "Ben Simmons", "Dorian Finney-Smith", "Nic Claxton"],
     "Mavericks": ["Luka Doncic", "Kyrie Irving", "Klay Thompson", "PJ Washington", "Dereck Lively II"],
@@ -9,20 +7,17 @@ teams = {
     "Magic": ["Jalen Suggs", "Kentavious Caldwell-Pope", "Franz Wagner", "Paolo Banchero", "Goga Bitadze"]
 }
 
-team = input("Choose a team. Choose the Nets, Mavericks, Warriors, Lakers, Knicks, or Magic: ").capitalize()
+
+team = input("Choose a team between the Nets, Mavericks, Warriors, Lakers, Knicks, and Magic: ").strip().capitalize()
 
 if team in teams:
     print(f"{team} players: {', '.join(teams[team])}")
     
-    player = input("Choose a player from your selected team.").capitalize()
+    player_name = input(f"Select a player from the {team}: ").strip().capitalize()
 
-    with open("./stats.json", encoding="utf8") as stats:
-        data = json.load(stats)
-
-    if player in stats["stats"]:
-        if "name" in json["stats"][player]: 
-            print(f"Stats for {json['stats'][player]['name']}: {json['stats'][player]}")
+    if player_name in teams[team]:
+        print(f"You selected {player_name} from the {team}.")
     else:
-        print(f"Stats for {player} are not available.")
+        print(f"{player_name} is not a player on the {team}.")
 else:
-    print("This player is either not found or not on your team.")
+    print("Team not found in the data.")
