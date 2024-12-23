@@ -19,12 +19,10 @@ if team in teams:
     with open("./stats.json", encoding="utf8") as stats:
         data = json.load(stats)
 
-    if player in teams[]:
-        if ['name'] in stats:
-            print(f"Stats for {'name'}: {data['stats']}")
-        else:
-            print(f"Stats for {'name'} are not available.")
+    if player in stats["stats"]:
+        if "name" in json["stats"][player]: 
+            print(f"Stats for {json['stats'][player]['name']}: {json['stats'][player]}")
     else:
-        print("This player is either not found or not on your team.")
+        print(f"Stats for {player} are not available.")
 else:
-    print("Invalid team!")
+    print("This player is either not found or not on your team.")
