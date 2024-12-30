@@ -7,7 +7,6 @@ teams = {
     "Magic": ["Jalen Suggs", "Kentavious Caldwell-Pope", "Franz Wagner", "Paolo Banchero", "Goga Bitadze"]
 }
 
-
 team = input("Choose a team between the Nets, Mavericks, Warriors, Lakers, Knicks, and Magic: ").strip().capitalize()
 
 if team in teams:
@@ -15,9 +14,10 @@ if team in teams:
     
     player_name = input(f"Select a player from the {team}: ").strip().capitalize()
 
-    if player_name in teams[team]:
+    if player_name.lower() in [player.lower() for player in teams[team]]:
         print(f"You selected {player_name} from the {team}.")
     else:
-        print(f"{player_name} is not a player on the {team}.")
+        print(f"{player_name} is not a valid player from the {team}.")
 else:
     print("Team not found in the data.")
+
