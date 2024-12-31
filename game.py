@@ -6,7 +6,7 @@ pygame.init()
 width = 800
 height = 600
 
-color = (255, 168, 64)
+color = (66, 74, 193)
 
 screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption('Basketball Royale')
@@ -30,5 +30,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-import select_teams
