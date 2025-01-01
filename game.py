@@ -3,16 +3,14 @@ import sys
 
 pygame.init()
 
-width, height = 800, 600
-screen = pygame.display.set_mode((width, height))
-pygame.display.set_caption("Team Selection")
+WIDTH, HEIGHT = 800, 600
+WHITE = (255, 255, 255)
+TEAM_COLOR = (66, 74, 193)
 
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Team and Player Selection")
 font = pygame.font.SysFont("Arial", 20)
 input_font = pygame.font.SysFont("Arial", 16)
-
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-TEAM_COLOR = (66, 74, 193)
 
 def get_teams():
     return {
@@ -22,52 +20,57 @@ def get_teams():
         "Lakers": ["Austin Reaves", "Dalton Knecht", "Rui Hachimura", "LeBron James", "Anthony Davis"],
         "Knicks": ["Jalen Brunson", "Mikal Bridges", "Josh Hart", "OG Anunoby", "Karl Anthony-Towns"],
         "Magic": ["Jalen Suggs", "Kentavious Caldwell-Pope", "Franz Wagner", "Paolo Banchero", "Goga Bitadze"]
-        }
-
-teams = get_teams()
-selected_team = None
-
-clock = pygame.time.Clock()
+    }
 
 def draw_text(text, font, color, position):
     rendered_text = font.render(text, True, color)
     screen.blit(rendered_text, position)
 
-running = True
-while running:
-    screen.fill(TEAM_COLOR)
+def main():
+    teams = get_teams()
+    selected_team = None
+    selected_player = None
+    clock = pygame.time.Clock()
 
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-        
-        if event.type == pygame.MOUSEBUTTONDOWN:
-            x, y = pygame.mouse.get_pos()
+    running = True
+    while running:
+        screen.fill(TEAM_COLOR)
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
 
-            if 100 <= x <= 300:
-                team_options = ["Nets", "Mavericks", "Warriors", "Lakers", "Knicks", "Magic"]
-                for i, team in enumerate(team_options):
-                    if 50 + i * 100 <= y <= 150 + i * 100:
-                        selected_team = team
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                x, y = pygame.mouse.get_pos()
 
-    draw_text("Choose a basketball team:", font, WHITE, (100, 10))
+                if not selected_team:
+                    for i, team in enumerate(teams.keys()):
+                        if 50 + i * 100 <= y <= 150 + i * 100:
+                            selected_team = team
 
-    team_options = ["Nets", "Mavericks", "Warriors", "Lakers", "Knicks", "Magic"]
-    for i, team in enumerate(team_options):
-        draw_text(team, input_font, WHITE, (100, 50 + i * 100))
+                elif selected_team and not selected_player:
+                    team_members = teams[selected_team]
+                    for i, member in enumerate(team_members):
+                        if 200 + i * 20 <= y <= 220 + i * 20:
+                            selected_player = member
 
-    if selected_team:
-        draw_text(f"Team: {selected_team}", font, WHITE, (300, 150))
+        if not selected_team:
+            draw_text("Choose a basketball team:", font, WHITE, (100, 10))
+            for i, team in enumerate(teams.keys()):
+                draw_text(team, input_font, WHITE, (100, 50 + i * 100))
+        elif selected_team and not selected_player:
+            draw_text(f"Team: {selected_team}", font, WHITE, (100, 50))
+            draw_text("Select a player:", font, WHITE, (100, 100))
+            for i, member in enumerate(teams[selected_team]):
+                draw_text(member, input_font, WHITE, (200, 200 + i * 20))
+        elif selected_team and selected_player:
+            draw_text(f"Team: {selected_team}", font, WHITE, (100, 50))
+            draw_text(f"Player: {selected_player}", font, WHITE, (100, 150))
 
-        team_members = teams[selected_team]
-        y_name = 200
-        for member in team_members:
-            draw_text(member, input_font, WHITE, (300, y_name))
-            y_name += 20  
+        pygame.display.flip()
+        clock.tick(60)
 
-    pygame.display.flip()
+    pygame.quit()
+    sys.exit()
 
-    clock.tick(60)
-
-pygame.quit()
-sys.exit()
+if __name__ == "__main__":
+    main()
