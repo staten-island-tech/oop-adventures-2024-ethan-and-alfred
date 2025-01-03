@@ -15,11 +15,17 @@ pygame.display.set_caption("Basketball Royale")
 font_large = pygame.font.SysFont("fixedsys", 50)
 font_small = pygame.font.SysFont("fixedsys", 23)
 
+# Load data from stats.json
 with open("./stats.json", encoding="utf8") as stats_file:
     data = json.load(stats_file)
 
-teams = {team_data["team"]: {player_data["name"]: player_data["stats"]
-                              for player_data in team_data["players"]} for team_data in data["teams"]}
+teams = {
+    team_data["team"]: {
+        "players": {player_data["name"]: player_data["stats"] for player_data in team_data["players"]},
+        "logo": pygame.image.load(team_data["logo_path"]),
+    }
+    for team_data in data["teams"]
+}
 
 def draw_text(text, font, color, position):
     rendered_text = font.render(text, True, color)
@@ -80,7 +86,7 @@ def select_team(y):
 
 def select_player(y, team):
     """Select player from the team based on mouse Y position."""
-    for i, player in enumerate(teams[team]):
+    for i, player in enumerate(teams[team]["players"]):
         if 200 + i * 20 <= y <= 220 + i * 20:
             return player
     return None
@@ -88,16 +94,17 @@ def select_player(y, team):
 def display_teams():
     """Display the available teams."""
     for i, team in enumerate(teams):
-        draw_text(team, font_small, TEXT_COLOR, (100, 50 + i * 100))
+        draw_text(team, font_small, TEXT_COLOR, (150, 50 + i * 100))
+        screen.blit(teams[team]["logo"], (50, 50 + i * 100))
 
 def display_players(team):
     """Display the players of the selected team."""
-    for i, player in enumerate(teams[team]):
+    for i, player in enumerate(teams[team]["players"]):
         draw_text(player, font_small, TEXT_COLOR, (200, 200 + i * 20))
 
 def show_player_stats(team, player):
     """Display the selected player's stats."""
-    stats = teams[team][player]
+    stats = teams[team]["players"][player]
     draw_text(f"Team: {team}", font_large, TEXT_COLOR, (100, 50))
     draw_text(f"Player: {player}", font_large, TEXT_COLOR, (100, 150))
     draw_text(f"Height: {stats['height']}", font_small, TEXT_COLOR, (100, 200))
