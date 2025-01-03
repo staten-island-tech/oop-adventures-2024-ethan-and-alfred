@@ -13,7 +13,7 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Basketball Royale")
 
 font_large = pygame.font.SysFont("fixedsys", 50)
-font_small = pygame.font.SysFont("fixedsys", 30)
+font_small = pygame.font.SysFont("fixedsys", 23)
 
 with open("./stats.json", encoding="utf8") as stats_file:
     data = json.load(stats_file)
@@ -24,6 +24,7 @@ teams = {team_data["team"]: {player_data["name"]: player_data["stats"]
 def draw_text(text, font, color, position):
     rendered_text = font.render(text, True, color)
     screen.blit(rendered_text, position)
+
 def draw_button(text, font, color, position, width, height):
     pygame.draw.rect(screen, color, (position[0], position[1], width, height))
     draw_text(text, font, TEXT_COLOR, (position[0] + 10, position[1] + 10))
@@ -62,6 +63,10 @@ def main():
             display_players(selected_team)
         else:
             show_player_stats(selected_team, selected_player)
+            draw_button("Start Game", font_small, BUTTON_COLOR, (350, 500), 100, 50)
+            if pygame.mouse.get_pressed()[0]:
+                if 350 <= x <= 450 and 500 <= y <= 550:
+                    in_game = True  
 
         pygame.display.flip()
         clock.tick(60)
