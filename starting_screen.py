@@ -24,7 +24,6 @@ teams = {team_data["team"]: {player_data["name"]: player_data["stats"]
 def draw_text(text, font, color, position):
     rendered_text = font.render(text, True, color)
     screen.blit(rendered_text, position)
-
 def draw_button(text, font, color, position, width, height):
     pygame.draw.rect(screen, color, (position[0], position[1], width, height))
     draw_text(text, font, TEXT_COLOR, (position[0] + 10, position[1] + 10))
@@ -102,8 +101,6 @@ def show_player_stats(team, player):
     draw_text(f"Defense: {stats['defense']}", font_small, TEXT_COLOR, (100, 260))
     draw_text(f"Playmaking: {stats['playmaking']}", font_small, TEXT_COLOR, (100, 280))
     draw_text(f"Rebounding: {stats['rebounding']}", font_small, TEXT_COLOR, (100, 300))
-
-
 
 if __name__ == "__main__":
     main()
