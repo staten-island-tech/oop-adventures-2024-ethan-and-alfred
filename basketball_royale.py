@@ -12,7 +12,7 @@ BUTTON_COLOR = (255, 255, 0)
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Basketball Royale")
 
-font_large = pygame.font.SysFont("fixedsys", 50)
+font_large = pygame.font.SysFont("fixedsys", 30)
 font_small = pygame.font.SysFont("fixedsys", 25)
 
 with open("./stats.json", encoding="utf8") as stats_file:
@@ -34,6 +34,8 @@ def main():
     in_game = False
     clock = pygame.time.Clock()
 
+    game_started = False  
+
     while True:
         screen.fill(BACKGROUND_COLOR)
         for event in pygame.event.get():
@@ -50,6 +52,9 @@ def main():
                     selected_team = select_team(y)
                 elif not selected_player and selected_team:
                     selected_player = select_player(y, selected_team)
+                elif selected_team and selected_player:
+                    if 350 <= x <= 450 and 500 <= y <= 550:
+                        game_started = True
 
         if not in_game:
             draw_text("Basketball Royale", font_large, TEXT_COLOR, (100, 10))
@@ -61,12 +66,11 @@ def main():
             draw_text(f"Team: {selected_team}", font_large, TEXT_COLOR, (100, 50))
             draw_text("Select a player:", font_large, TEXT_COLOR, (100, 100))
             display_players(selected_team)
-        else:
+        elif not game_started:
             show_player_stats(selected_team, selected_player)
             draw_button("Start Game", font_small, BUTTON_COLOR, (350, 500), 100, 50)
-            if pygame.mouse.get_pressed()[0]:
-                if 350 <= x <= 450 and 500 <= y <= 550:
-                    in_game = True  
+        else:
+            draw_text(f"Game has started with {selected_player} from {selected_team}!", font_large, TEXT_COLOR, (100, 250))
 
         pygame.display.flip()
         clock.tick(60)
