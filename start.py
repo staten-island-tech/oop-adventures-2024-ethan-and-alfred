@@ -1,7 +1,6 @@
 import pygame
 import sys
 import json
-<<<<<<< Updated upstream
 import os
 
 # Initialize Pygame
@@ -23,7 +22,7 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Basketball Game")
 
 # Load data
-=======
+
 
 pygame.init()
 
@@ -39,15 +38,19 @@ font_large = pygame.font.SysFont("fixedsys", 50)
 font_small = pygame.font.SysFont("fixedsys", 30)
 
 # Load data from stats.json
->>>>>>> Stashed changes
+
 with open("./stats.json", encoding="utf8") as stats_file:
     data = json.load(stats_file)
 
 teams = {
     team_data["team"]: {
-<<<<<<< Updated upstream
+
         "players": {player["name"]: player["stats"] for player in team_data["players"]},
         "logo": None
+
+        "players": {player_data["name"]: player_data["stats"] for player_data in team_data["players"]},
+        "logo": pygame.image.load(team_data["logo_path"]),
+>>>>>>> Stashed changes
 =======
         "players": {player_data["name"]: player_data["stats"] for player_data in team_data["players"]},
         "logo": pygame.image.load(team_data["logo_path"]),
@@ -56,6 +59,7 @@ teams = {
     for team_data in data["teams"]
 }
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 # Load team logos
 for team_name in teams:
@@ -66,10 +70,13 @@ for team_name in teams:
 # Utility functions
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 def draw_text(text, font, color, position):
     rendered_text = font.render(text, True, color)
     screen.blit(rendered_text, position)
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 # Game functions
 def main_menu():
@@ -150,6 +157,8 @@ def gameplay(team, player):
         draw_text(f"Score: {score}", font_small, TEXT_COLOR, (10, 10))
 
 =======
+=======
+>>>>>>> Stashed changes
 def draw_button(text, font, color, position, width, height):
     pygame.draw.rect(screen, color, (position[0], position[1], width, height))
     draw_text(text, font, TEXT_COLOR, (position[0] + 10, position[1] + 10))
@@ -161,11 +170,15 @@ def main():
 
     while True:
         screen.fill(BACKGROUND_COLOR)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
@@ -202,6 +215,8 @@ def main():
             ball_pos = player_pos[:]
             ball_velocity = [0, 0]
 =======
+=======
+>>>>>>> Stashed changes
 
             if event.type == pygame.MOUSEBUTTONDOWN:
                 x, y = pygame.mouse.get_pos()
@@ -225,11 +240,15 @@ def main():
             display_players(selected_team)
         else:
             show_player_stats(selected_team, selected_player)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         pygame.display.flip()
         clock.tick(60)
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 # Main loop
 if __name__ == "__main__":
@@ -237,6 +256,8 @@ if __name__ == "__main__":
     gameplay(team, player)
 
 =======
+=======
+>>>>>>> Stashed changes
 def select_team(y):
     """Select team based on mouse Y position."""
     for i, team in enumerate(teams):
@@ -276,4 +297,7 @@ def show_player_stats(team, player):
 
 if __name__ == "__main__":
     main()
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
