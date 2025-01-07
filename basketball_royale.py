@@ -1,6 +1,7 @@
 import pygame
 import sys
 import json
+import random
 
 pygame.init()
 
@@ -8,6 +9,8 @@ WIDTH, HEIGHT = 800, 600
 TEXT_COLOR = (0, 0, 0)
 BACKGROUND_COLOR = (66, 74, 193)
 BUTTON_COLOR = (255, 255, 0)
+PLAYER_COLOR = (255, 0, 0)
+ENEMY_COLOR = (0, 0, 255)
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Basketball Royale")
@@ -32,9 +35,11 @@ def draw_button(text, font, color, position, width, height):
 def main():
     selected_team, selected_player = None, None
     in_game = False
-    clock = pygame.time.Clock()
+    game_started = False
+    player_pos = [WIDTH // 2, HEIGHT // 2]
+    enemy_pos = [WIDTH // 2 - 100, HEIGHT // 2]  
 
-    game_started = False  
+    clock = pygame.time.Clock()
 
     while True:
         screen.fill(BACKGROUND_COLOR)
@@ -56,6 +61,17 @@ def main():
                     if 350 <= x <= 450 and 500 <= y <= 550:
                         game_started = True
 
+            if game_started:
+                keys = pygame.key.get_pressed()
+                if keys[pygame.K_LEFT]:
+                    player_pos[0] -= 5
+                if keys[pygame.K_RIGHT]:
+                    player_pos[0] += 5
+                if keys[pygame.K_UP]:
+                    player_pos[1] -= 5
+                if keys[pygame.K_DOWN]:
+                    player_pos[1] += 5
+
         if not in_game:
             draw_text("Basketball Royale", font_large, TEXT_COLOR, (100, 10))
             draw_button("Play", font_small, BUTTON_COLOR, (350, 500), 100, 50)
@@ -71,6 +87,11 @@ def main():
             draw_button("Start Game", font_small, BUTTON_COLOR, (350, 500), 100, 50)
         else:
             draw_text(f"Game has started with {selected_player} from {selected_team}!", font_large, TEXT_COLOR, (100, 250))
+
+            pygame.draw.circle(screen, PLAYER_COLOR, player_pos, 20)  
+            pygame.draw.circle(screen, ENEMY_COLOR, enemy_pos, 20)  
+
+            draw_text(f"Player Position: {player_pos}", font_small, TEXT_COLOR, (50, 550))
 
         pygame.display.flip()
         clock.tick(60)
