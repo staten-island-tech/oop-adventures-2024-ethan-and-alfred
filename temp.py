@@ -103,17 +103,27 @@ if __name__ == "__main__":
 =======
 class Player:
     def __init__(self, name, team, rating):
-        self.data = {  
-            "name": name,
-            "team": team,
-            "rating": rating
-        }
+        self.name = name
+        self.team = team
+        self.rating = rating
 
     def display(self):
-        print(f"Name: {self.data['name']}")
-        print(f"Age: {self.data['team']}")
-        print(f"Rating: {self.data['rating']}")
+        print(f"Player Name: {self.name}, Team: {self.team}, Rating: {self.rating}")
 
+<<<<<<< HEAD
 Player = Player("Lebron", "Lakers", "100")
 Player.display()
 >>>>>>> a6da10d9408f29c7ddf3fd017131cbe02a63d8a8
+=======
+players = []
+num_players = int(input("Enter the number of players: "))
+
+for _ in range(num_players):
+    name = input("Enter player name: ")
+    team = input("Enter player team: ")
+    rating = input("Enter player rating:")
+    players.append(Player(name, team, rating))
+
+for player in players:
+    player.display()
+>>>>>>> 0885c918f4ba7e671aece24c89db83838afa4019
