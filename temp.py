@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import pygame
 import json
 
@@ -99,3 +100,20 @@ if __name__ == "__main__":
     # Start the game
     game = BasketballGame(players)
     game.run()
+=======
+class Player:
+    def __init__(self, name, team, rating):
+        self.data = {  
+            "name": name,
+            "team": team,
+            "rating": rating
+        }
+
+    def display(self):
+        print(f"Name: {self.data['name']}")
+        print(f"Age: {self.data['team']}")
+        print(f"Rating: {self.data['rating']}")
+
+Player = Player("Lebron", "Lakers", "100")
+Player.display()
+>>>>>>> a6da10d9408f29c7ddf3fd017131cbe02a63d8a8
