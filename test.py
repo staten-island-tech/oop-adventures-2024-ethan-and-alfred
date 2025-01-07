@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import pygame
 import sys
 import json
@@ -140,3 +141,41 @@ def show_player_stats(team, player):
 
 if __name__ == "__main__":
     main()
+=======
+class Player:
+    def __init__(self, name):
+        self.name = name
+        self.score = 0
+
+    def add_score(self, points):
+        self.score += points
+
+    def display(self):
+        print(f"Player Name: {self.name}, Score: {self.score}")
+
+# Initialize players
+player1_name = input("Enter Player 1's name: ")
+player2_name = input("Enter Player 2's name: ")
+
+player1 = Player(player1_name)
+player2 = Player(player2_name)
+
+# Play 3 rounds
+for round_num in range(1, 4):
+    print(f"\nRound {round_num}")
+    p1_score = int(input(f"Enter score for {player1.name}: "))
+    p2_score = int(input(f"Enter score for {player2.name}: "))
+    player1.add_score(p1_score)
+    player2.add_score(p2_score)
+
+# Display final results
+print("\nFinal Results:")
+player1.display()
+player2.display()
+if player1.score > player2.score:
+    print(f"Winner: {player1.name}")
+elif player2.score > player1.score:
+    print(f"Winner: {player2.name}")
+else:
+    print("It's a tie!")
+>>>>>>> Stashed changes
