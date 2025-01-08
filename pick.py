@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import os
 import json
 teams = json.load(json)
@@ -40,6 +41,34 @@ if pick1 in players:
     print("\nYou selected:")
     selected_player.display()
 else:
+=======
+class Player:
+    def __init__(self, name, rating):
+        self.name = name
+        self.rating = rating
+
+    def display(self):
+        print(f"Player Name: {self.name}, Rating: {self.rating}")
+
+players = {
+    "Lebron James": Player("Lebron James", "100"),
+    "Stephen Curry": Player("Stephen Curry", "100"),
+    "Kevin Durant": Player("Kevin Durant", "100"),
+}
+
+print("Available Players:")
+for name in players:
+    print(name)
+
+pick1 = input("Player 1, Enter the name of the player you want to select: ")
+pick2 = input("Player 2, Enter the name of the player you want to select: ")
+
+if pick1 in players:
+    selected_player = players[pick1]
+    print("\nYou selected:")
+    selected_player.display()
+else:
+>>>>>>> Stashed changes
     print("Player not found!")
 
 if pick2 in players:
@@ -47,5 +76,9 @@ if pick2 in players:
     print("\nYou selected:")
     selected_player.display()
 else:
+<<<<<<< Updated upstream
+    print("Player not found!")
+>>>>>>> Stashed changes
+=======
     print("Player not found!")
 >>>>>>> Stashed changes

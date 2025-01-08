@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import pygame
 import sys
 import json
@@ -142,6 +143,8 @@ def show_player_stats(team, player):
 if __name__ == "__main__":
     main()
 =======
+=======
+>>>>>>> Stashed changes
 class Player:
     def __init__(self, name):
         self.name = name
@@ -178,4 +181,7 @@ elif player2.score > player1.score:
     print(f"Winner: {player2.name}")
 else:
     print("It's a tie!")
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
