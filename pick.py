@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 import os
 import json
 teams = json.load(json)
@@ -14,7 +13,7 @@ if found_player:
         print(f"- {player['name']} (Type: {', '.join(player['stats'])})")
 else:
     print("No matching Player found. Make sure spelling is correct.")
-=======
+
 class Player:
     def __init__(self, name, rating):
         self.name = name
@@ -41,7 +40,7 @@ if pick1 in players:
     print("\nYou selected:")
     selected_player.display()
 else:
-=======
+    
 class Player:
     def __init__(self, name, rating):
         self.name = name
@@ -68,7 +67,7 @@ if pick1 in players:
     print("\nYou selected:")
     selected_player.display()
 else:
->>>>>>> Stashed changes
+
     print("Player not found!")
 
 if pick2 in players:
@@ -76,9 +75,8 @@ if pick2 in players:
     print("\nYou selected:")
     selected_player.display()
 else:
-<<<<<<< Updated upstream
+
     print("Player not found!")
->>>>>>> Stashed changes
-=======
+
     print("Player not found!")
->>>>>>> Stashed changes
+
