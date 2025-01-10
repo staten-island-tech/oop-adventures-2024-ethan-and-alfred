@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import pygame
 import json
 
@@ -100,7 +99,6 @@ if __name__ == "__main__":
     # Start the game
     game = BasketballGame(players)
     game.run()
-=======
 class Player:
     def __init__(self, name, team, rating):
         self.name = name
@@ -110,11 +108,9 @@ class Player:
     def display(self):
         print(f"Player Name: {self.name}, Team: {self.team}, Rating: {self.rating}")
 
-<<<<<<< HEAD
 Player = Player("Lebron", "Lakers", "100")
 Player.display()
->>>>>>> a6da10d9408f29c7ddf3fd017131cbe02a63d8a8
-=======
+
 players = []
 num_players = int(input("Enter the number of players: "))
 
@@ -126,4 +122,4 @@ for _ in range(num_players):
 
 for player in players:
     player.display()
->>>>>>> 0885c918f4ba7e671aece24c89db83838afa4019
+

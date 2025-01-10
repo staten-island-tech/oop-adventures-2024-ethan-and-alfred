@@ -5,7 +5,8 @@ class Players:
         self.rating = rating 
 
     def play(self):
-        print(f"Hello, my name is {self.name}, I play for the {self.team}, and my rating is {self.rating}.")
+        print({self.name}, {self.team})
+    
 
 player1 = Players("Lebron James", "Lakers", "100")
 player2 = Players("Stephen Curry", "Warriors", "100")
