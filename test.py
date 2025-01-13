@@ -1,7 +1,7 @@
 import random
 
-# Player class
-class Player:
+# User class
+class User:
     def __init__(self, name, team, rating):
         self.name = name
         self.team = team
@@ -41,12 +41,12 @@ class Player:
 class BasketballGame:
     def __init__(self):
         self.players = [
-            Player("LeBron James", "Lakers", 97),
-            Player("Stephen Curry", "Warriors", 96),
-            Player("Giannis Antetokounmpo", "Bucks", 95),
-            Player("Kevin Durant", "Suns", 94),
-            Player("Joel Embiid", "76ers", 93),
-            Player("Nikola Jokic", "Nuggets", 92),
+            User("LeBron James", "Lakers", 99),
+            User("Stephen Curry", "Warriors", 99),
+            User("", "", 95),
+            User("", "", 94),
+            User("", "", 93),
+            User("", "", 92),
         ]
         self.user1_player = None
         self.user2_player = None
@@ -123,7 +123,7 @@ class BasketballGame:
 
     def run(self):
         """Run the game."""
-        print("--- Welcome to the Basketball Game ---")
+        print("Welcome to basketball game")
 
         # Users choose players
         self.user1_player = self.choose_player(1)
