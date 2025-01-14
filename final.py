@@ -154,7 +154,7 @@ class BasketballGame:
 
     def run(self):
         """Run the game."""
-        print("--- __________ ---")
+        print("Basketball Royale")
 
         self.user1_player = self.choose_player(1)
         self.user2_player = self.choose_player(2)
