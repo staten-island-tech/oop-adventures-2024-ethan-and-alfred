@@ -17,7 +17,7 @@ class Player:
             success_chance = 60  # 60% chance of making a midrange shot
             points = 2  # 2 points for a successful midrange shot
         elif shot_type == "dunk":
-            success_chance = 100  # 100% chance of making a dunk
+            success_chance = 70  # 70% chance of making a dunk
             points = 1  # 1 point for a successful dunk
         else:
             print("Invalid shot type!")  # Handle invalid shot type
