@@ -77,20 +77,20 @@ class BasketballGame:
 
     def choose_player(self, user_number):
         """Allow a user to choose a player from the available list."""
-        print(f"\nUser {user_number}, choose your player:")
-        for i, player in enumerate(self.players):
-            print(f"{i + 1}. {player}")  # Display all available players
-        choice = int(input("Enter the number of your choice: ")) - 1  # Get player's choice
-
-        # Ensure the choice is valid
-        while choice < 0 or choice >= len(self.players):
-            print("Invalid choice. Please choose again.")
-            choice = int(input("Enter the number of your choice: ")) - 1
-
-        # Remove chosen player from the list of available players
-        chosen_player = self.players.pop(choice)
-        print(f"User {user_number} selected: {chosen_player}")
-        return chosen_player
+        while True:
+            print(f"\nUser {user_number}, choose your player:")
+            for i, player in enumerate(self.players):
+                print(f"{i + 1}. {player}")  # Display all available players
+            try:
+                choice = int(input("Enter the number of your choice: ")) - 1  # Get player's choice
+                # Ensure the choice is valid
+                if choice < 0 or choice >= len(self.players):
+                    raise ValueError
+                chosen_player = self.players.pop(choice)
+                print(f"User {user_number} selected: {chosen_player}")
+                return chosen_player
+            except (ValueError, IndexError):
+                print("Invalid choice. Please choose a valid player number.")
 
     def simulate_round(self, quarter_number):
         """Simulate a round (quarter) of the game."""
@@ -114,19 +114,20 @@ class BasketballGame:
         print("1. 3-point shot (30% chance, 3 points)")
         print("2. Midrange shot (60% chance, 2 points)")
         print("3. Dunk/Layup (70% chance, 1 point)")
-        choice = int(input("Enter the number of your choice: "))
-
-        # Ensure the choice is valid
-        while choice not in [1, 2, 3]:
-            print("Invalid choice. Please choose again.")
-            choice = int(input("Enter the number of your choice: "))
-
-        if choice == 1:
-            return "3-point"
-        elif choice == 2:
-            return "midrange"
-        else:
-            return "dunk"
+        while True:
+            try:
+                choice = int(input("Enter the number of your choice: "))
+                # Ensure the choice is valid
+                if choice not in [1, 2, 3]:
+                    raise ValueError
+                if choice == 1:
+                    return "3-point"
+                elif choice == 2:
+                    return "midrange"
+                else:
+                    return "dunk"
+            except (ValueError):
+                print("Invalid choice. Please choose a valid shot type.")
 
     def display_scores(self):
         """Display the current scores of both players."""
